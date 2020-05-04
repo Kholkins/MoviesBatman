@@ -28,12 +28,14 @@ class MovieActivity : AppCompatActivity() {
                     val title = response.getString("Title")
                     val year = response.getString("Year")
                     val actors = response.getString("Actors")
+                    val awards = response.getString("Awards")
                     val plot = response.getString("Plot")
                     val posterURL = response.getString("Poster")
 
                     nameMovieTextView.text = title
                     plotMovieTextView.text = plot
                     actorsMovieTextView.text = actors
+                    awardsMovieTextView.text = awards
                     yearMovieTextView.text = year
 
                     Picasso.get()
